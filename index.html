@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jairo's QUIZZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Boas vinda e botão start-->
+
+    <h1>Jairo's QUIZZ</h1>
+    <h2>Ok <p id="userName" style="display:inline"></p> seu OTÁRIO, responda as perguntas e prove seu valor intelectual:</h2>
+    <button id="StartBtn" onclick="StartQuizz()">Start!</button>
+
+
+
+<!-- div onde o quizz acontece-->
+
+    <div id="quizzBox" style="visibility:hidden">
+        <h3 id="question">Qual o resultado da expressão (2 + 5):</h3>
+        <input id='resp' type="text" placeholder="Digite a resposta aqui!">
+        <button id="respbut">resposta</button>
+        <h4 id="questionCount">question: 1 de 3</h4>
+
+    </div>
+
+<!-- caso erre!-->    
+    <button onclick="restartPage()" style="visibility:hidden" id="failureDiv" >Restart</button>
+
+<!--Lógica da parada-->
+
+    <script src='index.js'></script>
+</body>
+</html>
