@@ -35,7 +35,7 @@ buttons.forEach(value => {
             inputDisplay.innerText += value;
         }
 
-    })
+    });
 
     calculator.appendChild(button);
 });
